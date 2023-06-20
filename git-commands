@@ -1,0 +1,38 @@
+adding files: 
+-----------------------------
+git add files.txt
+git add files.txt files1.txt
+git add .
+git add -A
+git commit -m "initial commit"
+
+--------------------------------
+To unstage
+git restore --staged files.txt 
+
+to restore the contents of file which is staged:
+git reset files.txt
+git reset HEAD files.txt
+git rm --cached files.txt
+git restore files.txt
+--------------------------------
+
+
+git config
+
+git config --help 
+git config --global user.name "Gaurav Sahani"
+git config --global user.email "Gaurav Sahani"
+
+git config --global --edit
+git config --list 
+
+~/.gitconfig  --global
+.git/config repository specific
+
+--------------------------------
+
+git log
+
+
+
