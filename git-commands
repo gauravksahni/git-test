@@ -76,7 +76,7 @@ from the logs you can see the commit SHA ID, Author , Date and commit message.
 
 $ git log
 commit 6150551bcd06710036738e95b97221b90024679d (HEAD -> main)
-Author: Gaurav Bangalore <gbangalo@akamai.com>
+Author: x.x.x.x
 Date:   Tue Jun 20 17:44:21 2023 +0530
     Fixed the pagination issue with login page
 
@@ -88,13 +88,13 @@ git log --stat
 --------------------------------
 HEAD 
 The HEAD points to the last commit in the current checkout branch 
-When uou swicth branches with git checkout, the HEAD is tranferred 
+When you switch branches with git checkout, the HEAD is transferred 
 to the new branch.
 
 git show head :
 $ git show head
 commit 2ebc27d2de3e9f75eec48e6b9432313e6d199600 (HEAD -> main)
-Author: Gaurav Bangalore <gbangalo@akamai.com>
+Author:  x.x.x.x
 Date:   Tue Jun 20 18:02:02 2023 +0530
 
     added two new files
