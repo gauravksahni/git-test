@@ -148,3 +148,28 @@ git diff - command shows changes between commits , branches and more
 
 
 Creating a remote repository
+
+or create a new repository on the command line
+git remote add origin https://github.com/gauravksahni/git-test.git
+git push -u origin main
+--------------------------------
+
+push an existing repository from the command line
+git remote add origin https://github.com/gauravksahni/git-test.git
+git branch -M main
+git push -u origin main
+
+--------------------------------
+Remove the origin
+git remote rm origin 
+--------------------------------
+
+--------------------------------
+
+git config push.default current
+
+--------------------------------
+
+
+GIT Branches:
+
