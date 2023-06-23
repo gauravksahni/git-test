@@ -45,12 +45,14 @@ git commit -m "initial commit"
 --------------------------------
 To unstage
 git restore --staged files.txt 
+git rm --cached files.txt
 
 to restore the contents of file which is staged:
 git reset files.txt
 git reset HEAD files.txt
-git rm --cached files.txt
 git restore files.txt
+
+
 --------------------------------
 
 
@@ -79,8 +81,70 @@ Date:   Tue Jun 20 17:44:21 2023 +0530
     Fixed the pagination issue with login page
 
 
+git log --oneline
+git log --summary
+git log --stat
+
 --------------------------------
 HEAD 
 The HEAD points to the last commit in the current checkout branch 
 When uou swicth branches with git checkout, the HEAD is tranferred 
 to the new branch.
+
+git show head :
+$ git show head
+commit 2ebc27d2de3e9f75eec48e6b9432313e6d199600 (HEAD -> main)
+Author: Gaurav Bangalore <gbangalo@akamai.com>
+Date:   Tue Jun 20 18:02:02 2023 +0530
+
+    added two new files
+
+diff --git a/git-commands b/git-commands
+index 6459a58..4ab11f4 100644
+--- a/git-commands
++++ b/git-commands
+@@ -34,5 +34,53 @@ git config --list
+ 
+ git log
+ 
++adding files: 
++-----------------------------
++git add files.txt
++git add files.txt files1.txt
++git add .
++git add -A
++git commit -m "initial commit"
++
++--------------------------------
++To unstage
++git restore --staged files.txt 
++
++to restore the contents of file which is staged:
++git reset files.txt
++git reset HEAD files.txt
++git rm --cached files.txt
++git restore files.txt
+
+--------------------------------
+.gitignore 
+ignores the files which are not tracked
+
+
+--------------------------------
+
+Git Reset and Restore: 
+
+rm, mv, remote, push, diff, upstream, origin
+
+delete and rename files under staged
+git rm files.txt
+
+git mv files.txt file.py
+
+--------------------------------
+
+git diff - command shows changes between commits , branches and more
+
+
+
+Creating a remote repository
